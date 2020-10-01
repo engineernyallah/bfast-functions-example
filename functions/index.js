@@ -5,7 +5,7 @@ exports.helloWorld = BFast.functions().onHttpRequest('/hello', (request, respons
     response.send({message:"Hello from BFast!"});
 });
 
-exports.startPage = BFast.functions().onGetHttpRequest('/', (request, response)=>{
+exports.startPage = BFast.functions().onGetHttpRequest('/admin/hello', (request, response)=>{
     //response.send(`<p>I am A Heading</p>`);
     response.send(`
     <p style="
